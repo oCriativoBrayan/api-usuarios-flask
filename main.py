@@ -1,10 +1,9 @@
 from flask import Flask
+from app.routes.user_routes import user_bp
 
 app = Flask (__name__)
 
-@app.route("/")
-def home():
-    return {"status":"API rodando"}
+app.register_blueprint(user_bp)
 
 if __name__ == "__main__":
     app.run(debug=True)

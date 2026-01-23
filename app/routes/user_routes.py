@@ -2,28 +2,19 @@ from flask import Blueprint, request, jsonify
 
 user_bp = Blueprint('user_bp', __name__)
 
-@user_bp.route('/users', methods=['GET'])
-def get_users():
-    return jsonify({
-       "sucess": True,
-        "data": [],
-        "message": "List of users"
-    })
-
 @user_bp.route('/users', methods=['POST'])
-def create_user():
-    if not request.is_json:
-        return jsonify({"error": "Content-type must be application/json"}), 415
+def upload_test():
 
-    data = request.get_json()   
+    print("FORM:", request.form)
+    print("FILES:", request.files)
 
-    name = data.get("name")
-    email = data.get("email")
+    image = request.files.get('image')
+
+    if image is None:
+        return jsonify({"error": "imagem não chegou"}), 400
 
     return jsonify({
         "success": True,
-        "name": name,
-        "email": email 
-
-    }), 201
+        "filename": image.filename
+    }), 200
 

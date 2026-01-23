@@ -1,9 +1,14 @@
 from flask import Flask
 from app.routes.user_routes import user_bp
 
-app = Flask (__name__)
+def create_app():
+    app = Flask(__name__)
 
-app.register_blueprint(user_bp)
+    #registra o blueprint de usuários
+    app.register_blueprint(user_bp)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+    return app
+
+if __name__ == '__main__':
+        app = create_app()
+        app.run(debug=True)

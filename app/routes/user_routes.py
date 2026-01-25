@@ -5,11 +5,11 @@ from werkzeug.utils import secure_filename
 #define o blueprint de usuários
 user_bp = Blueprint('user_bp', __name__)
 
-#pasta para salvar uploads
+#pasta para salvar uploadscd
 UPLOAD_FOLDER = 'uploads/'
 
 #tipos de arquivos permitidos
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'nef'}
 
 #valida se o arquivo tem uma extensão permitida
 def allowed_file(filename):
@@ -39,7 +39,13 @@ def upload_user():
     #salva a imagem na pasta de uploads
     image.save(path)
 
+    print("METHOD:", request.method)
+    print("FILES:", request.files)
+    print("FORM:", request.form)
+    
     return jsonify({
         "success": True,
         "filename": filename
     }), 200
+
+    

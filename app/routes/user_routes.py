@@ -4,10 +4,14 @@ from flask import Blueprint, request, jsonify
 
 user_bp = Blueprint('user_bp', __name__)
 
-@user_bp.route('/users', methods=['GET'])
-def get_users():
-    users = User.query.all()  # busca todos no banco
-    return jsonify([user.to_dict() for user in users])
+@user_bp.route('/users/<int:user_id>', methods=['GET'])
+def get_user(user_id):
+    user = User.query.get(user_id)
+
+    if not user:
+        return jsonify({"error": "usuário não encontrado"}), 404
+
+    return jsonify(user.to_dict()), 200
 
 @user_bp.route('/users', methods=['POST'])         
 def create_user():
@@ -33,3 +37,30 @@ def create_user():
     db.session.commit()
 
     return jsonify(user.to_dict()), 201
+
+@user_bp.route('/users/<int:user_id>', methods=['PUT'])
+def update_user(user_id):
+    user = User.query.get(user_id)
+
+    if not user:
+        return jsonify({"error": "usuário não encontrado"}), 404
+
+    name = request.form.get('name')
+    email = request.form.get('email')
+    image = request.files.get('image')
+
+    if not name or not email:
+        return jsonify({"error": "Nome e email são obrigatórios"}), 400
+
+    filename = None
+    if image:
+        filename = image.filename
+        image.save(f'uploads/{filename}')
+
+    user.name = name
+    user.email = email
+    user.image = filename
+
+    db.session.commit()
+
+    return jsonify(user.to_dict()), 200

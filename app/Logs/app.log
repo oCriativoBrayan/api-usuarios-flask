@@ -1,0 +1,50 @@
+2026-01-30 23:43:38,796 | api | INFO | Iniciando os testes do logger...
+2026-01-30 23:43:38,797 | api | WARNING | Este é um aviso de teste do logger.
+2026-01-30 23:43:38,797 | api | ERROR | Este é um erro de teste do logger.
+2026-01-30 23:58:18,276 | api | INFO | Iniciando a aplicação Flask...
+2026-01-30 23:58:19,479 | api | INFO | Iniciando a aplicação Flask...
+2026-01-30 23:58:23,688 | api | INFO | Acessando a rota home
+2026-01-30 23:59:26,402 | api | INFO | Iniciando a aplicação Flask...
+2026-01-30 23:59:29,748 | api | INFO | Acessando a rota home
+2026-01-31 00:00:03,395 | api | INFO | Rota /erro chamada
+2026-01-31 00:00:56,944 | api | INFO | Iniciando a aplicação Flask...
+2026-01-31 00:01:08,063 | api | INFO | Rota /erro chamada
+2026-01-31 00:02:07,503 | api | INFO | Iniciando a aplicação Flask...
+2026-01-31 00:04:56,847 | api | INFO | Iniciando a aplicação Flask...
+2026-01-31 00:04:58,153 | api | INFO | Iniciando a aplicação Flask...
+2026-01-31 00:04:59,869 | api | INFO | Rota /erro chamada
+2026-01-31 00:05:02,908 | api | INFO | Acessando a rota home
+2026-01-31 00:05:27,074 | api | INFO | Acessando a rota home
+2026-01-31 00:05:33,784 | api | INFO | Rota /erro chamada
+2026-01-31 00:06:06,868 | api | INFO | Iniciando a aplicação Flask...
+2026-01-31 00:06:13,146 | api | INFO | Acessando a rota home
+2026-01-31 00:30:30,225 | api | ERROR | Erro 500 capturado
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\braya\api-usuarios-flask\app\routes\user_routes.py", line 10, in boom
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+2026-01-31 00:31:36,771 | api | ERROR | Erro 500 capturado
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\braya\api-usuarios-flask\app\routes\user_routes.py", line 10, in boom
+    return jsonify({"message": "Boom!"})
+    ^^^^^
+ZeroDivisionError: division by zero

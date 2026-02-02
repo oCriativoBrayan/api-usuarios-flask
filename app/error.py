@@ -5,10 +5,11 @@ logger = logging.getLogger("api")
 
 def register_error_handlers(app):
 
-    @app.errorhandler(500)
-    def internal_error(e):
-        logger.error("Erro 500", exc_info=True)
-        return jsonify({
+    @app.errorhandler(Exception)
+    def handle_exception(e):
+        app.logger.error("Verifica o tipo", exc_info=True)
+        
+        return {
             "success": False,
-            "error": "Erro interno do servidor"
-        }), 500
+            "error": "Erro interno"
+        }, 500

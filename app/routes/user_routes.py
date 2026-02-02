@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify
 from app.models.user import User
 from app.database import db
 import os
+from app.utils.response import success_response
 
 user_bp = Blueprint('user_bp', __name__)
 
@@ -9,6 +10,11 @@ user_bp = Blueprint('user_bp', __name__)
 def boom():
     return jsonify({"message": "Boom!"})
 
+
+
+@user_bp.route('/users', methods=['GET'])
+def users():
+    return success_response([])
 
 @user_bp.route('/users', methods=['POST'])
 def create_user():
@@ -32,7 +38,3 @@ def create_user():
     return jsonify(user.to_dict()), 201
 
 
-@user_bp.route('/users', methods=['GET'])
-def get_users():
-    users = User.query.all()
-    return jsonify([u.to_dict() for u in users])

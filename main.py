@@ -1,19 +1,32 @@
-from flask import Flask, jsonify
-from app.routes.user_routes import user_bp
+from flask import Flask, request
+from app.error import register_error_handlers
 from app.logger import setup_logger
+import time
 
 app = Flask(__name__)
+
 logger = setup_logger()
+app.logger.handlers = logger.handlers
+app.logger.setLevel(logger.level)
 
-@app.errorhandler(500)
-def internal_error(e):
-    logger.error("Erro 500 capturado", exc_info=True)
-    return jsonify({
-        "success": False,
-        "error": "Erro interno do servidor"
-    }), 500
 
-app.register_blueprint(user_bp)
+register_error_handlers(app)   
+
+@app.before_request
+def start_time():
+    request.start_time = time.time()
+
+@app.after_request
+def log_request(response):
+    duration = time.time() - request.start_time
+
+    app.logger.info(
+        f"{request.method} {request.path}"
+        f"{response.status_code}"
+        f"{duration:.3f}s"
+    )
+
+    return response
 
 if __name__ == '__main__':
     app.run(debug=False)

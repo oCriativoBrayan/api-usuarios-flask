@@ -1,5 +1,6 @@
 from flask import Flask, request
 from app.error import register_error_handlers
+from app.routes.user_routes import user_bp
 from app.logger import setup_logger
 import time
 
@@ -9,8 +10,9 @@ logger = setup_logger()
 app.logger.handlers = logger.handlers
 app.logger.setLevel(logger.level)
 
+register_error_handlers(app)  
 
-register_error_handlers(app)   
+app.register_blueprint(user_bp, url_prefix="/users")
 
 @app.before_request
 def start_time():
@@ -28,5 +30,10 @@ def log_request(response):
 
     return response
 
+@app.route("/ping")
+def ping():
+    return {"ok": True}
+
+
 if __name__ == '__main__':
-    app.run(debug=False)
+     app.run(debug=True)

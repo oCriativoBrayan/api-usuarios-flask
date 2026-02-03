@@ -1,40 +1,32 @@
-from flask import Blueprint, request, jsonify
-from app.models.user import User
-from app.database import db
-import os
-from app.utils.response import success_response
+from flask import Blueprint, request # type: ignore
+from app.services.user_services import list_users, find_user, create_user # type: ignore
+from app.utils.response import success_response, error_response # type: ignore
 
 user_bp = Blueprint('user_bp', __name__)
 
-@user_bp.route('/boom')
-def boom():
-    return jsonify({"message": "Boom!"})
 
+@user_bp.route('/users')
+def get_users():
+    return success_response(list_users())
 
-
-@user_bp.route('/users', methods=['GET'])
-def users():
-    return success_response([])
+@user_bp.route('/users/<int:user_id>', methods=['GET'])
+def get_user(user_id):
+    try:
+        return success_response(find_user(user_id))
+    except ValueError as e:
+        return error_response(str(e), 404)
+    
 
 @user_bp.route('/users', methods=['POST'])
-def create_user():
-    name = request.form.get('name')
-    email = request.form.get('email')
-    image = request.files.get('image')
+def create():
+    if not request.is_json:
+        return error_response("Envie JSON", 400)
 
-    if not name or not email:
-        return jsonify({"error": "Nome e email são obrigatórios"}), 400
-
-    filename = None
-    if image:
-        os.makedirs('uploads', exist_ok=True)
-        filename = image.filename
-        image.save(os.path.join('uploads', filename))
-
-    user = User(name=name, email=email, image=filename)
-    db.session.add(user)
-    db.session.commit()
-
-    return jsonify(user.to_dict()), 201
-
-
+    try:
+        return success_response(
+            create_user(request.json),
+            "Usuário criado",
+            201
+        )
+    except ValueError as e:
+        return error_response(str(e), 400)

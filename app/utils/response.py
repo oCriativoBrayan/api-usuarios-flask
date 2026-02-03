@@ -1,4 +1,4 @@
-def success_response(data=nome, message="Sucesso", status=200):
+def success_response(data=None, message="Sucesso", status=200):
     return{
         "success":True,
         "message":message,

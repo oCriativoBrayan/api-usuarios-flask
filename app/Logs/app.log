@@ -1,4 +1,4 @@
-2026-02-01 21:27:42,109 | main | ERROR | Erro não tratado
+2026-02-03 00:13:43,735 | main | ERROR | Verifica o tipo
 Traceback (most recent call last):
   File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
     rv = self.dispatch_request()
@@ -13,4 +13,485 @@ Traceback (most recent call last):
   File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
     raise NotFound() from None
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2026-02-01 21:27:42,111 | main | INFO | GET /users5000.002s
+2026-02-03 00:13:43,738 | main | INFO | POST /users5000.003s
+2026-02-03 00:14:45,200 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:14:45,203 | main | INFO | POST /users5000.003s
+2026-02-03 00:16:26,245 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:16:26,251 | main | INFO | POST /users5000.007s
+2026-02-03 00:16:42,320 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:16:42,322 | main | INFO | GET /users5000.002s
+2026-02-03 00:20:36,859 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:20:36,863 | main | INFO | GET /users5000.004s
+2026-02-03 00:20:41,228 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:20:41,231 | main | INFO | GET /users5000.004s
+2026-02-03 00:20:54,431 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:20:54,434 | main | INFO | POST /users5000.003s
+2026-02-03 00:20:59,867 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:20:59,868 | main | INFO | POST /users5000.002s
+2026-02-03 00:21:10,104 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:21:10,106 | main | INFO | POST /users5000.002s
+2026-02-03 00:21:15,141 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:21:15,143 | main | INFO | GET /users5000.003s
+2026-02-03 00:23:37,883 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:23:37,886 | main | INFO | GET /users5000.004s
+2026-02-03 00:23:44,693 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:23:44,696 | main | INFO | GET /users5000.003s
+2026-02-03 00:23:49,221 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:23:49,224 | main | INFO | POST /users5000.003s
+2026-02-03 00:26:03,576 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:26:03,581 | main | INFO | POST /users5000.005s
+2026-02-03 00:26:08,589 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:26:08,593 | main | INFO | GET /users5000.004s
+2026-02-03 00:26:31,272 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:26:31,275 | main | INFO | GET /users5000.003s
+2026-02-03 00:27:06,503 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:27:06,509 | main | INFO | GET /users5000.006s
+2026-02-03 00:27:10,582 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:27:10,584 | main | INFO | POST /users5000.002s
+2026-02-03 00:27:13,762 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:27:13,764 | main | INFO | GET /users5000.002s
+2026-02-03 00:28:16,197 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:28:16,204 | main | INFO | GET /users5000.007s
+2026-02-03 00:28:25,931 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:28:25,935 | main | INFO | POST /users5000.004s
+2026-02-03 00:28:36,687 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:28:36,690 | main | INFO | POST /users5000.003s
+2026-02-03 00:30:36,590 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:30:36,595 | main | INFO | GET /users5000.006s
+2026-02-03 00:47:17,433 | main | INFO | GET /ping2000.001s
+2026-02-03 00:47:27,092 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:47:27,099 | main | INFO | GET /users5000.007s
+2026-02-03 00:48:24,004 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:48:24,009 | main | INFO | POST /users5000.005s
+2026-02-03 00:52:38,632 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:52:38,637 | main | INFO | GET /users5000.006s
+2026-02-03 00:57:12,770 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:57:12,774 | main | INFO | GET /users5000.005s
+2026-02-03 00:57:29,311 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 00:57:29,313 | main | INFO | POST /users5000.002s
+2026-02-03 01:00:22,963 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 01:00:22,969 | main | INFO | POST /users5000.007s
+2026-02-03 01:00:30,471 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 01:00:30,477 | main | INFO | GET /5000.006s
+2026-02-03 01:00:40,810 | main | ERROR | Verifica o tipo
+Traceback (most recent call last):
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\braya\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-02-03 01:00:40,813 | main | INFO | GET /users5000.003s

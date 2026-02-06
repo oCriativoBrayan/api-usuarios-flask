@@ -14,13 +14,24 @@ register_error_handlers(app)
 
 app.register_blueprint(user_bp, url_prefix="/users")
 
-def health_check():
-    return True
+#@app.route("/health")
+#def h():
+#return "ok"
+
+def get_health_status():
+    return "ok"
+
+@app.route("/health")
+def health_route():
+    return get_health_status()
+
 
 @app.before_request
 def start_time():
     request.start_time = time.time()
 
+def create_app():
+    return "ok"
 
 @app.after_request
 def log_request(response):

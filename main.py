@@ -1,7 +1,9 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from app.error import register_error_handlers
 from app.routes.user_routes import user_bp
 from app.logger import setup_logger
+from app.services.health_service import get_health
+
 import time
 
 app = Flask(__name__)
@@ -14,17 +16,15 @@ register_error_handlers(app)
 
 app.register_blueprint(user_bp, url_prefix="/users")
 
-#@app.route("/health")
-#def h():
-#return "ok"
 
-def get_health_status():
-    return "ok"
 
 @app.route("/health")
-def health_route():
-    return get_health_status()
+def health():
+    return get_health()
 
+@app.route("/math")
+def count():
+    return jsonify(result= 8 * 2)
 
 @app.before_request
 def start_time():
@@ -32,6 +32,7 @@ def start_time():
 
 def create_app():
     return "ok"
+
 
 @app.after_request
 def log_request(response):
@@ -51,4 +52,4 @@ def ping():
 
 
 if __name__ == '__main__':
-     app.run(debug=True)
+    app.run(debug=True)

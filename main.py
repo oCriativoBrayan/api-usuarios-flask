@@ -15,4 +15,8 @@ def create_app():
     def math():
         return jsonify(result=8)
     
+    @app.route("/soma")
+    def soma():
+        return jsonify(result=10)
+    
     return app

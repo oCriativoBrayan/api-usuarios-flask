@@ -9,3 +9,10 @@ def test_math(client):
     assert response.status_code == 200
     #test retorno resultado
     assert response.json["result"] == 8
+
+def test_soma(client):
+    response = client.get("/soma")
+
+    assert response.status_code == 200
+
+    assert response.json["result"] == 10

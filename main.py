@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+from app.services.math_service import soma
 
 #define uma funcao
 def create_app():
@@ -16,7 +17,8 @@ def create_app():
         return jsonify(result=8)
     
     @app.route("/soma")
-    def soma():
-        return jsonify(result=10)
+    def _soma():
+        a, b = 5, 5
+        return jsonify(result=soma(a, b))
     
     return app

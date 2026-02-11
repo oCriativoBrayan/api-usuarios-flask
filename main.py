@@ -30,7 +30,7 @@ def create_app():
     
     @app.errorhandler(500)
     def internal_error(error):
-        return jsonify(success=False, error="not_found"), 500
+        return jsonify(success=False, error="internal_error"), 500
     
     @app.errorhandler(CustumError)
     def handle_custom_error(error):

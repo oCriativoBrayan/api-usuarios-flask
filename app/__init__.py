@@ -2,11 +2,16 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from app.routes.math_routes import math_bp
 from app.errors.handlers import register_error_handlers
+from app.routes.user_routes import bp
 
 db = SQLAlchemy()
 
 def create_app(test_config=None):
     app = Flask(__name__)
+
+    app.config["SECRET_KEY"] = "supersecret"
+
+    app.register_blueprint(bp)
 
     #verifica status db
     if test_config:

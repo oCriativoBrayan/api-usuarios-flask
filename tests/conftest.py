@@ -2,6 +2,20 @@
 from app import create_app, db
 import pytest
 
+
+def test_ping(client):
+    response = client.get("/ping")
+
+    assert response.status_code == 200
+    assert response.get_json() == {"message": "pong"}
+
+def test_criar_usuarios(client):
+    response = client.post("/usuarios", json={
+        "nome": "Brayan"
+    })
+
+    assert response.status_code == 201
+
 #crio uma fixture (pre definicao)
 @pytest.fixture
 def app():

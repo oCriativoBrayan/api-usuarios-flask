@@ -1,15 +1,15 @@
 from app.database import db
+from werkzeug.security import generate_password_hash, check_password_hash
+
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
-    image = db.Column(db.String(200))
+    senha = db.Column(db.String(255), nullable=False)
 
-    def to_dict(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'email': self.email,
-            'image': self.image
-        }
+    def set_senha(self, senha):
+        self.senha = generate_password_hash(senha)
+    
+    def check_senha(self, senha):
+        return check_password_hash(self.senha, senha)

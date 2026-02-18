@@ -29,4 +29,20 @@ def register_error_handlers(app):
     def handle_custom_error(error):
         return jsonify(success=False, error=str(error)), 400
     
+
+def test_rota_protegida(client):
+    login = client.post("/login", json={
+        "email": "admin@email",
+        "senha": "1234"
+    })
+
     
+    token = login.get_json()["token"]
+
+    response = client.get(
+        "/perfil",
+        headers={"Authorization": f"Bearer {token}"}
+    )
+
+    assert response.status_code == 200
+
